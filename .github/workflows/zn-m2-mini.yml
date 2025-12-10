@@ -10,7 +10,7 @@
 # See /LICENSE for more information.
 #
 
-name: zn-m2-ssrp docker build
+name: zn-m2-mini build
 
 on:
   repository_dispatch:
@@ -47,7 +47,7 @@ jobs:
           ./scripts/feeds update -a
           ../scripts/zn-m2/diy-part2.sh
           ./scripts/feeds install -a
-          mv ../config/zn-m2-ssrp.config openwrt/.config
+          mv ../config/zn-m2-mini.config openwrt/.config
           ../scripts/zn-m2/diy-part4.sh
           make defconfig
           make download -j4

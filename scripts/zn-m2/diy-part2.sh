@@ -12,3 +12,5 @@
 #优先安装 passwall 源
 ./scripts/feeds install -a -f -p passwall_packages
 ./scripts/feeds install -a -f -p passwall_luci
+#优先安装 ddns-go 源
+./scripts/feeds install -a -f -p ddns_go
